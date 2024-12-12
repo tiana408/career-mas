@@ -1,0 +1,40 @@
+analyze_profile_task:
+  description: >
+    Analyze career preferences for {career_preferences}.
+    Review key requirements including: {key_requirements}.
+    Consider target industries: {target_industries}.
+    Create a comprehensive profile assessment considering it's 2024.
+  expected_output: >
+    A detailed list of 10 bullet points covering candidate profile analysis,
+    including skill matches, experience alignment, and career path potential.
+  agent: analyst
+
+research_market_task:
+  description: >
+    Research current job market opportunities in {target_industries} that match
+    {career_preferences}. Focus on positions requiring {key_requirements}.
+    Consider latest market trends and industry developments in 2024.
+  expected_output: >
+    A list with 10 bullet points covering relevant job opportunities,
+    market trends, salary ranges, and growth potential in target industries.
+  agent: researcher
+
+match_analysis_task:
+  description: >
+    Synthesize profile analysis and market research to identify optimal career matches.
+    Match {career_preferences} with opportunities in {target_industries}.
+    Ensure alignment with {key_requirements}.
+  expected_output: >
+    A comprehensive matching analysis with top career recommendations,
+    including skill fit, industry alignment, and growth potential.
+  agent: summary_agent
+
+reporting_task:
+  description: >
+    Create a detailed career development plan based on all gathered information.
+    Include specific steps to transition into roles matching {career_preferences}
+    in {target_industries} that fulfill {key_requirements}.
+  expected_output: >
+    A fully detailed career transition plan in markdown format without '```',
+    including action items, timeline, and specific job targets.
+  agent: reporting_analyst
